@@ -3,7 +3,7 @@
   Only get 200-1000 (options) views every 5 minutes (it's good thing and bad thing at the same time)\
   \
 **Tik Tok Auto Views V2 (this one), you have 2 options:**
-  1. You can get instan 5K views every 5 minutes (still, it's good thing and bad thing at the same time) or
+  1. You can get instant 5K views every 5 minutes (still, it's good thing and bad thing at the same time) or
   2. You can get random fans between 20-30 (I think) every 5 minutes
   
 ## Requirements
