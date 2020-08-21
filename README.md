@@ -31,3 +31,7 @@ Use RDP to get tons of views or fans (run 24/7)
 
 ## Special thanks
 Thanks to https://homedecoratione.com/ for providing great free service like this
+
+## Tik Tok Auto Views V1
+[**JavaScript**](https://github.com/kangoka/tiktok-autoviews) or 
+[**Python**](https://github.com/kangoka/tiktok-autoviews-py)
