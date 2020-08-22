@@ -12,7 +12,7 @@ driver.set_window_size(1024, 650)
 
 def loop1():
     driver.get("https://homedecoratione.com/")
-    time.sleep(60) #Wait 1 min to complete gcaptcha
+    time.sleep(90) #Wait 1 min to complete gcaptcha
     driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(username)
@@ -23,12 +23,12 @@ def loop1():
     time.sleep(2)
     print("Fans success delivered!")
     driver.refresh()
-    time.sleep(250)
+    time.sleep(520)
     loop1()
 
 def loop2():
     driver.get("https://homedecoratione.com/")
-    time.sleep(60)
+    time.sleep(90)
     driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(vidUrl)
@@ -39,7 +39,7 @@ def loop2():
     time.sleep(2)
     print("Views success delivered!")
     driver.refresh()
-    time.sleep(250)
+    time.sleep(520)
     loop2()
 
 vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
