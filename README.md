@@ -23,8 +23,9 @@ auto = 2 #Change 2 for Tik Tok views</pre>
 4. python tiktodv2.py
 5. **You still have to manual complete gcaptcha check (only for first time you run the code)**
 
-## Tips
-Use RDP to get tons of views or fans (run 24/7)
+## Few things
+1. Use RDP to get tons of views or fans (run 24/7)
+2. If you are using Chrome ver 84, you don't need to download chromedriver again (won't cause error). But, if you are not using Chrome ver 84, then download the right version like your Chrome version. [**Download here**](https://chromedriver.chromium.org/downloads)
 
 ## Result preview
 ![Preview](https://i.imgur.com/hsFcG5H.png)
