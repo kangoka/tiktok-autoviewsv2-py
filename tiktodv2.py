@@ -70,7 +70,7 @@ def loop2():
     time.sleep(250)
     loop2()
 
-
+"""
 def loop3():
     time.sleep(60)
     try:
@@ -99,7 +99,7 @@ def loop3():
     driver.refresh()
     time.sleep(250)
     loop3()
-
+"""
 
 vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
 username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
@@ -114,9 +114,9 @@ print("")
 You can change auto value below
 auto = 1 for auto fans (NEW UPDATE: They removed auto fans for now)
 auto = 2 for auto views
-auto = 3 for auto hearts 
+auto = 3 for auto hearts (NEW UPDATE: They removed auto hearts for now)
 """
-auto = 2
+auto = 3
 
 if auto == 1:
     driver.get("https://homedecoratione.com/")
