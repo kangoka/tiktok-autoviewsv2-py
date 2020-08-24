@@ -27,7 +27,12 @@ def loop1():
     time.sleep(2)
     driver.find_element_by_xpath('//button[@type="submit"]').click()
     time.sleep(2)
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/button").click()
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/button").click()
+    except:
+        print("Failed to input, need to retry")
+        driver.refresh()
+        loop1()
     time.sleep(2)
     print("Fans success delivered!")
     driver.refresh()
@@ -51,7 +56,12 @@ def loop2():
     time.sleep(2)
     driver.find_element_by_xpath('//button[@type="submit"]').click()
     time.sleep(2)
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[2]").click()
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[2]").click()
+    except:
+        print("Failed to input, need to retry")
+        driver.refresh()
+        loop2()
     time.sleep(2)
     print("Views success delivered!")
     driver.refresh()
@@ -75,7 +85,12 @@ def loop3():
     time.sleep(2)
     driver.find_element_by_xpath('//button[@type="submit"]').click()
     time.sleep(2)
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[1]").click()
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[1]").click()
+    except:
+        print("Failed to input, need to retry")
+        driver.refresh()
+        loop3()
     time.sleep(2)
     print("Hearts success delivered!")
     driver.refresh()
