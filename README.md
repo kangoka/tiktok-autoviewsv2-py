@@ -4,7 +4,8 @@
   \
 **Tik Tok Auto Views V2 (this one), you have 2 options:**
   1. You can get instant 5K views every 10 minutes (still, it's good thing and bad thing at the same time) or
-  2. You can get random fans between 20-30 (I think) every 10 minutes
+  2. You can get random fans between 15-30 (I think) every 10 minutes
+  3. You can get random hearts between 15-30 (I think) every 10 minutes (NEW UPDATE: They removed this features for now)
   
 ## Requirements
 Python 3
