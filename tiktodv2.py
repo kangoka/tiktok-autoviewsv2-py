@@ -30,7 +30,7 @@ def loop1():
     try:
         driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/button").click()
     except:
-        print("Failed to input, need to retry")
+        print("Either failed to input or can't find the button. Need to retry")
         driver.refresh()
         loop1()
     time.sleep(2)
@@ -59,7 +59,7 @@ def loop2():
     try:
         driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[2]").click()
     except:
-        print("Failed to input, need to retry")
+        print("Either failed to input or can't find the button. Need to retry")
         driver.refresh()
         loop2()
     time.sleep(2)
@@ -89,7 +89,7 @@ def loop3():
     try:
         driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[1]").click()
     except:
-        print("Failed to input, need to retry")
+        print("Either failed to input or can't find the button. Need to retry")
         driver.refresh()
         loop3()
     time.sleep(2)
