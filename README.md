@@ -37,3 +37,6 @@ Thanks to https://homedecoratione.com/ for providing great free service like thi
 ## Tik Tok Auto Views V1 (DON'T USE V1)
 [**JavaScript**](https://github.com/kangoka/tiktok-autoviews) or 
 [**Python**](https://github.com/kangoka/tiktok-autoviews-py)
+
+## TIKTOD V3 (HIGHLY RECOMMENDED
+[**Python**](https://github.com/kangoka/tiktodv3)
