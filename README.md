@@ -38,5 +38,5 @@ Thanks to https://homedecoratione.com/ for providing great free service like thi
 [**JavaScript**](https://github.com/kangoka/tiktok-autoviews) or 
 [**Python**](https://github.com/kangoka/tiktok-autoviews-py)
 
-## TIKTOD V3 (HIGHLY RECOMMENDED
+## TIKTOD V3 (HIGHLY RECOMMENDED)
 [**Python**](https://github.com/kangoka/tiktodv3)
