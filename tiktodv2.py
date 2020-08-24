@@ -10,6 +10,7 @@ chrome_options.add_argument("--log-level=3")
 driver = webdriver.Chrome(r"chromedriver.exe", options=chrome_options)
 driver.set_window_size(1024, 650)
 
+"""
 def loop1():
     time.sleep(60)
     try:
@@ -38,7 +39,8 @@ def loop1():
     driver.refresh()
     time.sleep(250)
     loop1()
-
+"""
+    
 def loop2():
     time.sleep(60)
     try:
@@ -68,7 +70,7 @@ def loop2():
     time.sleep(250)
     loop2()
 
-"""
+
 def loop3():
     time.sleep(60)
     try:
@@ -97,7 +99,7 @@ def loop3():
     driver.refresh()
     time.sleep(250)
     loop3()
-"""
+
 
 vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
 username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
@@ -110,11 +112,11 @@ print("")
 
 """
 You can change auto value below
-auto = 1 for auto fans
+auto = 1 for auto fans (NEW UPDATE: They removed auto fans for now)
 auto = 2 for auto views
-auto = 3 for auto hearts (NEW UPDATE: They removed auto hearts for now)
+auto = 3 for auto hearts 
 """
-auto = 1
+auto = 2
 
 if auto == 1:
     driver.get("https://homedecoratione.com/")
