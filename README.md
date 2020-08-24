@@ -1,3 +1,6 @@
+# TIKTOD V3 (HIGHLY RECOMMENDED)
+## [**Python**](https://github.com/kangoka/tiktodv3)
+
 # Tik Tok Auto Views V2 and and the difference
 **Tik Tok Auto Views V1 (previous project):**\
   Only get 200-1000 (options) views every 5 minutes (it's good thing and bad thing at the same time)\
@@ -37,6 +40,3 @@ Thanks to https://homedecoratione.com/ for providing great free service like thi
 ## Tik Tok Auto Views V1 (DON'T USE V1)
 [**JavaScript**](https://github.com/kangoka/tiktok-autoviews) or 
 [**Python**](https://github.com/kangoka/tiktok-autoviews-py)
-
-## TIKTOD V3 (HIGHLY RECOMMENDED)
-[**Python**](https://github.com/kangoka/tiktodv3)
