@@ -11,11 +11,19 @@ driver = webdriver.Chrome(r"chromedriver.exe", options=chrome_options)
 driver.set_window_size(1024, 650)
 
 def loop1():
-    driver.get("https://homedecoratione.com/")
-    time.sleep(90) #Wait 1 min to complete gcaptcha
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
+    time.sleep(60)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
+    except:
+        print("You didn't solve the captcha yet")
+        loop1()
     time.sleep(2)
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(username)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(username)
+    except:
+        print("Delay")
+        driver.refresh()
+        loop1()
     time.sleep(2)
     driver.find_element_by_xpath('//button[@type="submit"]').click()
     time.sleep(2)
@@ -23,15 +31,23 @@ def loop1():
     time.sleep(2)
     print("Fans success delivered!")
     driver.refresh()
-    time.sleep(520)
+    time.sleep(550)
     loop1()
 
 def loop2():
-    driver.get("https://homedecoratione.com/")
-    time.sleep(90)
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
+    time.sleep(60)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
+    except:
+        print("You didn't solve the captcha yet")
+        loop2()
     time.sleep(2)
-    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(vidUrl)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(vidUrl)
+    except:
+        print("Delay")
+        driver.refresh()
+        loop2()
     time.sleep(2)
     driver.find_element_by_xpath('//button[@type="submit"]').click()
     time.sleep(2)
@@ -39,8 +55,32 @@ def loop2():
     time.sleep(2)
     print("Views success delivered!")
     driver.refresh()
-    time.sleep(520)
+    time.sleep(550)
     loop2()
+
+def loop3():
+    time.sleep(60)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
+    except:
+        print("You didn't solve the captcha yet")
+        loop3()
+    time.sleep(2)
+    try:
+        driver.find_element_by_xpath("/html/body/main/div/div/div[2]/form/div/input").send_keys(vidUrl)
+    except:
+        print("Delay")
+        driver.refresh()
+        loop3()
+    time.sleep(2)
+    driver.find_element_by_xpath('//button[@type="submit"]').click()
+    time.sleep(2)
+    driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div/div/h5/button[1]").click()
+    time.sleep(2)
+    print("Hearts success delivered!")
+    driver.refresh()
+    time.sleep(550)
+    loop3()
 
 vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
 username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
@@ -51,8 +91,20 @@ print(tiktod)
 print("Author: https://github.com/kangoka")
 print("")
 
-auto = 1 #Change 2 for Tik Tok views
+"""
+You can change auto value below
+auto = 1 for auto fans
+auto = 2 for auto views
+auto = 3 for auto hearts
+"""
+auto = 3
+
 if auto == 1:
+    driver.get("https://homedecoratione.com/")
     loop1()
-else:
+elif auto == 2:
+    driver.get("https://homedecoratione.com/")
     loop2()
+else:
+    driver.get("https://homedecoratione.com/")
+    loop3()
