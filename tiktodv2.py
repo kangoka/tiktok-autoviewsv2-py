@@ -36,7 +36,7 @@ def loop1():
     time.sleep(2)
     print("Fans success delivered!")
     driver.refresh()
-    time.sleep(550)
+    time.sleep(250)
     loop1()
 
 def loop2():
@@ -65,7 +65,7 @@ def loop2():
     time.sleep(2)
     print("Views success delivered!")
     driver.refresh()
-    time.sleep(550)
+    time.sleep(250)
     loop2()
 
 """
@@ -95,7 +95,7 @@ def loop3():
     time.sleep(2)
     print("Hearts success delivered!")
     driver.refresh()
-    time.sleep(550)
+    time.sleep(250)
     loop3()
 """
 
