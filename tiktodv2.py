@@ -101,8 +101,8 @@ def loop3():
     loop3()
 """
 
-vidUrl = "YOUR_URL" #Change YOUR_URL to your Tik Tok video URL
-username = "YOUR_USERNAME" #Change YOUR_USERNAME to your Tik Tok username
+vidUrl = "https://vm.tiktok.com/ZSJshJpLw/" #Change YOUR_URL to your Tik Tok video URL
+username = "bd.799" #Change YOUR_USERNAME to your Tik Tok username
 
 system("cls")
 tiktod = pyfiglet.figlet_format("TIKTOD V2", font="slant")
@@ -118,10 +118,10 @@ auto = 3 for auto hearts (NEW UPDATE: They removed auto hearts for now)
 """
 auto = 3
 
-if auto == 1:
+if auto == 5000:
     driver.get("https://homedecoratione.com/")
     loop1()
-elif auto == 2:
+elif auto == 5000:
     driver.get("https://homedecoratione.com/")
     loop2()
 else:
